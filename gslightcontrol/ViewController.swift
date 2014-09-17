@@ -41,9 +41,19 @@ class ViewController: UITableViewController {
     }
     
     func headerView() -> UIView {
-        var didChangeColorBlock: NKOColorPickerDidChangeColorBlock = { color in println(color) }
+        var didChangeColorBlock: NKOColorPickerDidChangeColorBlock = {
+            (color: UIColor!) in
+            self.firebaseRef.childByAppendingPath("color").setValue("#\(color.hexStringValue)")
+        }
         
         colorPickerView = NKOColorPickerView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 150), color: UIColor.redColor(), andDidChangeColorBlock: didChangeColorBlock)
+        
+        firebaseRef.childByAppendingPath("color").observeEventType(.Value, withBlock: {
+            snapshot in
+            var color = UIColor(hexString: snapshot.value as String)
+            self.colorPickerView.color = color
+            self.tableView.backgroundColor = color
+        })
         
         return colorPickerView
     }

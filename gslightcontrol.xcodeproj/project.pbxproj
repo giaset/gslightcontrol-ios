@@ -36,7 +36,7 @@
 		689C0F5519C93C2C00D2AFC0 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_colormap.png; sourceTree = "<group>"; };
 		689C0F5619C93C2C00D2AFC0 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
 		689C0F5719C93C2C00D2AFC0 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
-		689C0F5D19C93EA300D2AFC0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		689C0F5D19C93EA300D2AFC0 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = gslightcontrol/Firebase.framework; sourceTree = "<group>"; };
 		689C0F5F19C93ED100D2AFC0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		689C0F6119C93EDB00D2AFC0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		689C0F6319C93EE100D2AFC0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -64,13 +64,9 @@
 		689C0F2219C937D800D2AFC0 = {
 			isa = PBXGroup;
 			children = (
-				689C0F6719C93EEE00D2AFC0 /* SystemConfiguration.framework */,
-				689C0F6519C93EE800D2AFC0 /* Security.framework */,
-				689C0F6319C93EE100D2AFC0 /* CFNetwork.framework */,
-				689C0F6119C93EDB00D2AFC0 /* libc++.dylib */,
-				689C0F5F19C93ED100D2AFC0 /* libicucore.dylib */,
 				689C0F2D19C937D800D2AFC0 /* gslightcontrol */,
 				689C0F2C19C937D800D2AFC0 /* Products */,
+				689C0F6919C93FDD00D2AFC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,7 +81,6 @@
 		689C0F2D19C937D800D2AFC0 /* gslightcontrol */ = {
 			isa = PBXGroup;
 			children = (
-				689C0F5D19C93EA300D2AFC0 /* Firebase.framework */,
 				689C0F5019C93C0C00D2AFC0 /* NFOColorPicker */,
 				689C0F3019C937D800D2AFC0 /* AppDelegate.swift */,
 				689C0F3219C937D800D2AFC0 /* ViewController.swift */,
@@ -123,6 +118,19 @@
 				689C0F5519C93C2C00D2AFC0 /* nko_colormap.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		689C0F6919C93FDD00D2AFC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				689C0F5D19C93EA300D2AFC0 /* Firebase.framework */,
+				689C0F6719C93EEE00D2AFC0 /* SystemConfiguration.framework */,
+				689C0F6519C93EE800D2AFC0 /* Security.framework */,
+				689C0F6319C93EE100D2AFC0 /* CFNetwork.framework */,
+				689C0F6119C93EDB00D2AFC0 /* libc++.dylib */,
+				689C0F5F19C93ED100D2AFC0 /* libicucore.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

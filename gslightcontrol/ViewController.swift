@@ -25,15 +25,19 @@ class ViewController: UITableViewController {
         
         tableView.tableHeaderView = headerView()
         
+        // Set up On/Off Switch
         firebaseRef.childByAppendingPath("on").observeEventType(.Value, withBlock: {
             snapshot in
             self.onOffSwitch.on = snapshot.value as Bool
         })
+        onOffSwitch.addTarget(self, action: "onOffToggled", forControlEvents: .ValueChanged)
         
+        // Set up Brightness Slider
         firebaseRef.childByAppendingPath("brightness").observeEventType(.Value, withBlock: {
             snapshot in
             self.brightnessSlider.value = snapshot.value as Float
         })
+        brightnessSlider.addTarget(self, action: "brightnessSliderChanged", forControlEvents: .ValueChanged)
     }
     
     func headerView() -> UIView {
@@ -43,6 +47,16 @@ class ViewController: UITableViewController {
         
         return colorPickerView
     }
+    
+    func onOffToggled() {
+        firebaseRef.childByAppendingPath("on").setValue(onOffSwitch.on)
+    }
+    
+    func brightnessSliderChanged() {
+        firebaseRef.childByAppendingPath("brightness").setValue(brightnessSlider.value)
+    }
+    
+    // Table View Data Source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -75,7 +89,7 @@ class ViewController: UITableViewController {
                 cell!.textLabel!.text = "On/Off"
                 cell!.accessoryView = onOffSwitch
             } else {
-                brightnessSlider.frame = CGRect(x: 20, y: 5, width: cell!.contentView.frame.width, height: brightnessSlider.frame.height)
+                brightnessSlider.frame = CGRect(x: 10, y: 5, width: cell!.contentView.frame.width-20, height: brightnessSlider.frame.height)
                 brightnessSlider.minimumValue = 0
                 brightnessSlider.maximumValue = 1
                 cell!.contentView.addSubview(brightnessSlider)

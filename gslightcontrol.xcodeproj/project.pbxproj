@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		689C0F3119C937D800D2AFC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689C0F3019C937D800D2AFC0 /* AppDelegate.swift */; };
 		689C0F3319C937D800D2AFC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689C0F3219C937D800D2AFC0 /* ViewController.swift */; };
-		689C0F3619C937D800D2AFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3419C937D800D2AFC0 /* Main.storyboard */; };
 		689C0F3819C937D800D2AFC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3719C937D800D2AFC0 /* Images.xcassets */; };
 		689C0F3B19C937D800D2AFC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3919C937D800D2AFC0 /* LaunchScreen.xib */; };
+		689C0F5819C93C2C00D2AFC0 /* nko_brightness_guide.png in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F5319C93C2C00D2AFC0 /* nko_brightness_guide.png */; };
+		689C0F5919C93C2C00D2AFC0 /* nko_brightness_guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F5419C93C2C00D2AFC0 /* nko_brightness_guide@2x.png */; };
+		689C0F5A19C93C2C00D2AFC0 /* nko_colormap.png in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F5519C93C2C00D2AFC0 /* nko_colormap.png */; };
+		689C0F5B19C93C2C00D2AFC0 /* NKOColorPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 689C0F5719C93C2C00D2AFC0 /* NKOColorPickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +22,14 @@
 		689C0F2F19C937D800D2AFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		689C0F3019C937D800D2AFC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		689C0F3219C937D800D2AFC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		689C0F3519C937D800D2AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		689C0F3719C937D800D2AFC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		689C0F3A19C937D800D2AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		689C0F5119C93C2C00D2AFC0 /* gslightcontrol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "gslightcontrol-Bridging-Header.h"; sourceTree = "<group>"; };
+		689C0F5319C93C2C00D2AFC0 /* nko_brightness_guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_brightness_guide.png; sourceTree = "<group>"; };
+		689C0F5419C93C2C00D2AFC0 /* nko_brightness_guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nko_brightness_guide@2x.png"; sourceTree = "<group>"; };
+		689C0F5519C93C2C00D2AFC0 /* nko_colormap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nko_colormap.png; sourceTree = "<group>"; };
+		689C0F5619C93C2C00D2AFC0 /* NKOColorPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKOColorPickerView.h; sourceTree = "<group>"; };
+		689C0F5719C93C2C00D2AFC0 /* NKOColorPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKOColorPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +62,12 @@
 		689C0F2D19C937D800D2AFC0 /* gslightcontrol */ = {
 			isa = PBXGroup;
 			children = (
+				689C0F5019C93C0C00D2AFC0 /* NFOColorPicker */,
 				689C0F3019C937D800D2AFC0 /* AppDelegate.swift */,
 				689C0F3219C937D800D2AFC0 /* ViewController.swift */,
-				689C0F3419C937D800D2AFC0 /* Main.storyboard */,
 				689C0F3719C937D800D2AFC0 /* Images.xcassets */,
 				689C0F3919C937D800D2AFC0 /* LaunchScreen.xib */,
+				689C0F5119C93C2C00D2AFC0 /* gslightcontrol-Bridging-Header.h */,
 				689C0F2E19C937D800D2AFC0 /* Supporting Files */,
 			);
 			path = gslightcontrol;
@@ -70,6 +79,26 @@
 				689C0F2F19C937D800D2AFC0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		689C0F5019C93C0C00D2AFC0 /* NFOColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				689C0F5219C93C2C00D2AFC0 /* Assets */,
+				689C0F5619C93C2C00D2AFC0 /* NKOColorPickerView.h */,
+				689C0F5719C93C2C00D2AFC0 /* NKOColorPickerView.m */,
+			);
+			name = NFOColorPicker;
+			sourceTree = "<group>";
+		};
+		689C0F5219C93C2C00D2AFC0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				689C0F5319C93C2C00D2AFC0 /* nko_brightness_guide.png */,
+				689C0F5419C93C2C00D2AFC0 /* nko_brightness_guide@2x.png */,
+				689C0F5519C93C2C00D2AFC0 /* nko_colormap.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				689C0F3619C937D800D2AFC0 /* Main.storyboard in Resources */,
+				689C0F5819C93C2C00D2AFC0 /* nko_brightness_guide.png in Resources */,
+				689C0F5919C93C2C00D2AFC0 /* nko_brightness_guide@2x.png in Resources */,
+				689C0F5A19C93C2C00D2AFC0 /* nko_colormap.png in Resources */,
 				689C0F3B19C937D800D2AFC0 /* LaunchScreen.xib in Resources */,
 				689C0F3819C937D800D2AFC0 /* Images.xcassets in Resources */,
 			);
@@ -143,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				689C0F3319C937D800D2AFC0 /* ViewController.swift in Sources */,
+				689C0F5B19C93C2C00D2AFC0 /* NKOColorPickerView.m in Sources */,
 				689C0F3119C937D800D2AFC0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,14 +182,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		689C0F3419C937D800D2AFC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				689C0F3519C937D800D2AFC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		689C0F3919C937D800D2AFC0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,9 +274,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = gslightcontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gslightcontrol/gslightcontrol-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,9 +287,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = gslightcontrol/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "gslightcontrol/gslightcontrol-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -12,18 +12,7 @@
 		689C0F3619C937D800D2AFC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3419C937D800D2AFC0 /* Main.storyboard */; };
 		689C0F3819C937D800D2AFC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3719C937D800D2AFC0 /* Images.xcassets */; };
 		689C0F3B19C937D800D2AFC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689C0F3919C937D800D2AFC0 /* LaunchScreen.xib */; };
-		689C0F4719C937D800D2AFC0 /* gslightcontrolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689C0F4619C937D800D2AFC0 /* gslightcontrolTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		689C0F4119C937D800D2AFC0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 689C0F2319C937D800D2AFC0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 689C0F2A19C937D800D2AFC0;
-			remoteInfo = gslightcontrol;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		689C0F2B19C937D800D2AFC0 /* gslightcontrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gslightcontrol.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,10 @@
 		689C0F3519C937D800D2AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		689C0F3719C937D800D2AFC0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		689C0F3A19C937D800D2AFC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		689C0F4019C937D800D2AFC0 /* gslightcontrolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gslightcontrolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		689C0F4519C937D800D2AFC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		689C0F4619C937D800D2AFC0 /* gslightcontrolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gslightcontrolTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		689C0F2819C937D800D2AFC0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		689C0F3D19C937D800D2AFC0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				689C0F2D19C937D800D2AFC0 /* gslightcontrol */,
-				689C0F4319C937D800D2AFC0 /* gslightcontrolTests */,
 				689C0F2C19C937D800D2AFC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				689C0F2B19C937D800D2AFC0 /* gslightcontrol.app */,
-				689C0F4019C937D800D2AFC0 /* gslightcontrolTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,23 +72,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		689C0F4319C937D800D2AFC0 /* gslightcontrolTests */ = {
-			isa = PBXGroup;
-			children = (
-				689C0F4619C937D800D2AFC0 /* gslightcontrolTests.swift */,
-				689C0F4419C937D800D2AFC0 /* Supporting Files */,
-			);
-			path = gslightcontrolTests;
-			sourceTree = "<group>";
-		};
-		689C0F4419C937D800D2AFC0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				689C0F4519C937D800D2AFC0 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,24 +92,6 @@
 			productReference = 689C0F2B19C937D800D2AFC0 /* gslightcontrol.app */;
 			productType = "com.apple.product-type.application";
 		};
-		689C0F3F19C937D800D2AFC0 /* gslightcontrolTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 689C0F4D19C937D800D2AFC0 /* Build configuration list for PBXNativeTarget "gslightcontrolTests" */;
-			buildPhases = (
-				689C0F3C19C937D800D2AFC0 /* Sources */,
-				689C0F3D19C937D800D2AFC0 /* Frameworks */,
-				689C0F3E19C937D800D2AFC0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				689C0F4219C937D800D2AFC0 /* PBXTargetDependency */,
-			);
-			name = gslightcontrolTests;
-			productName = gslightcontrolTests;
-			productReference = 689C0F4019C937D800D2AFC0 /* gslightcontrolTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +103,6 @@
 				TargetAttributes = {
 					689C0F2A19C937D800D2AFC0 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					689C0F3F19C937D800D2AFC0 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 689C0F2A19C937D800D2AFC0;
 					};
 				};
 			};
@@ -182,7 +120,6 @@
 			projectRoot = "";
 			targets = (
 				689C0F2A19C937D800D2AFC0 /* gslightcontrol */,
-				689C0F3F19C937D800D2AFC0 /* gslightcontrolTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,13 +135,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689C0F3E19C937D800D2AFC0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -217,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		689C0F3C19C937D800D2AFC0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				689C0F4719C937D800D2AFC0 /* gslightcontrolTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		689C0F4219C937D800D2AFC0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 689C0F2A19C937D800D2AFC0 /* gslightcontrol */;
-			targetProxy = 689C0F4119C937D800D2AFC0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		689C0F3419C937D800D2AFC0 /* Main.storyboard */ = {
@@ -352,40 +266,6 @@
 			};
 			name = Release;
 		};
-		689C0F4E19C937D800D2AFC0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = gslightcontrolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gslightcontrol.app/gslightcontrol";
-			};
-			name = Debug;
-		};
-		689C0F4F19C937D800D2AFC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = gslightcontrolTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gslightcontrol.app/gslightcontrol";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,14 +283,6 @@
 			buildConfigurations = (
 				689C0F4B19C937D800D2AFC0 /* Debug */,
 				689C0F4C19C937D800D2AFC0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		689C0F4D19C937D800D2AFC0 /* Build configuration list for PBXNativeTarget "gslightcontrolTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				689C0F4E19C937D800D2AFC0 /* Debug */,
-				689C0F4F19C937D800D2AFC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
